@@ -1,0 +1,21 @@
+This is a version of Liar's Dice for 4 players.
+
+Installation
+The game needs Python and wxPython installed.
+Port 22222 is used for network games.
+
+Starting the game
+Have one player run the server using StartServer.py. This will also create a client.
+Other players can then run StartClient.py
+The game starts when there are 4 clients connected.
+
+Liar's Dice basic gameplay
+Each player starts with 5 dice.
+During a player's turn, s\he may make a bid, call the previous player a liar, or declare the previous bid to be spot-on.
+If a bid is made, it must be higher than the previous bid.
+If "Liar" is called, either the player who called it, or the player it was called against will lose a die, depending on whether the bid was a lie.
+If "Spot-On" is called, all dice are taken into account:
+	If the bid is exactly right across all dice, all players except the person who called loses a die.
+	Otherwise the person who called it loses 2 dice.
+The game ends when only one player is left with dice.
+See http://en.wikipedia.org/wiki/Liar's_dice#Rules_.28common_hand.29 for a further explanation of the rules.
